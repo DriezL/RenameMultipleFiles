@@ -1,0 +1,28 @@
+﻿<Window x:Class="RenameMultipleFiles.OpenFileDialogMultipleFilesSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OpenFileDialogMultipleFilesSample" Height="464" Width="574">
+    <DockPanel Margin="10">
+        <WrapPanel HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="0,0,0,10">
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label Grid.ColumnSpan="2" FontSize="16">Change part of the name of multiple files.</Label>
+                <Label Grid.Row="1">Part of the name to rename</Label>
+                <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtOldPart" VerticalAlignment="Center"/>
+                <Label Grid.Row="2">This should be renamed to</Label>
+                <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtNewPart" VerticalAlignment="Center"/>
+                <Button Grid.Row="3" Grid.Column="1" Name="btnOpenFile" Click="btnOpenFiles_Click" Margin="5,5,5,5">Select files to rename</Button>
+            </Grid>
+        </WrapPanel>
+        <ListBox Name="lbFiles" />
+    </DockPanel>
+</Window>
