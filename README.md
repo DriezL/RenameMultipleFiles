@@ -1,3 +1,3 @@
 # RenameMultipleFiles
 Change parts of the name of multiple files at once. 
-Just a small excercise in WPF and F#
+A small excercise in WPF and F#
